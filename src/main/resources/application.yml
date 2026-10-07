@@ -1,0 +1,17 @@
+general:
+  kafka-topic: midas.transactions   # keep whatever the repo provided
+
+spring:
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.add.type.headers: false   # matches your consumer config (no type headers)
+
+# src/main/resources/application.yml
+incentive:
+  url: http://localhost:8080/incentive
+
+server:
+  port: 33400
