@@ -1,3 +1,6 @@
+Absolutely — paste this in as your full `README.md`:
+
+```markdown
 # Midas Transaction Processing Backend
 
 A Spring Boot backend completed as part of the J.P. Morgan Advanced Software Engineering Forage program.
@@ -30,16 +33,43 @@ The final integration test verifies the complete transaction pipeline.
 
 ```bash
 ./mvnw -Dtest=TaskFiveTests test
+```
 
 Expected result:
+
+```text
 Tests run: 1, Failures: 0, Errors: 0
 BUILD SUCCESS
+```
 
 The application also packages successfully with:
-./mvnw -DskipTests package
 
-Project Origin
+```bash
+./mvnw -DskipTests package
+```
+
+## Project Structure
+
+```text
+src/
+├── main/
+│   ├── java/com/jpmc/midascore/
+│   │   ├── api/
+│   │   ├── component/
+│   │   ├── entity/
+│   │   ├── foundation/
+│   │   ├── kafka/
+│   │   └── repository/
+│   └── resources/
+└── test/
+```
+
+## Project Origin
+
 This project was completed as part of the J.P. Morgan Advanced Software Engineering virtual experience on Forage.
-Starter repository: vagabond-systems/forage-midas
-Author
+
+Starter repository: `vagabond-systems/forage-midas`
+
+## Author
+
 Keith Laurendine Jr.
