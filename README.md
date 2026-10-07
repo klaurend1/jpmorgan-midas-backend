@@ -1,6 +1,3 @@
-Absolutely — paste this in as your full `README.md`:
-
-```markdown
 # Midas Transaction Processing Backend
 
 A Spring Boot backend completed as part of the J.P. Morgan Advanced Software Engineering Forage program.
